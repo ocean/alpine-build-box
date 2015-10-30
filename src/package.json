@@ -1,0 +1,35 @@
+{
+  "name": "commerce-drupal-forms-gulp-workflow",
+  "version": "0.0.1",
+  "description": "Gulp workflow for the Commerce Drupal Forms.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "postinstall": "find node_modules/ -name '*.info' -type f -delete"
+  },
+  "author": "Cyrus Eftos <cyrus.eftos@commerce.wa.gov.au>",
+  "contributors": {
+    "name": "Drew Robinson",
+    "email": "<drew.robinson@commerce.wa.gov.au>"
+  },
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/commerce-wa-ols/drupal-forms.git"
+  },
+  "devDependencies": {
+    "chalk": "^1.1.1",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.0.1",
+    "gulp-bower": "0.0.10",
+    "gulp-concat": "^2.6.0",
+    "gulp-if": "^1.2.5",
+    "gulp-sass": "2.0.3",
+    "gulp-size": "^2.0.0",
+    "gulp-stats": "0.0.3",
+    "gulp-uglify": "^1.4.1",
+    "gulp-util": "^3.0.6",
+    "gzip-size": "^3.0.0",
+    "minimist": "^1.2.0",
+    "node-normalize-scss": "^1.0.3"
+  }
+}
