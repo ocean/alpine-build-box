@@ -1,15 +1,15 @@
 #!/usr/bin/env bash
 
-SOURCE="${BASH_SOURCE[0]}"
-RDIR="$( dirname "$SOURCE" )"
+# SOURCE="${BASH_SOURCE[0]}"
+# RDIR="$( dirname "$SOURCE" )"
 # ANSIBLE_VERSION=${1:-latest}
 # ANSIBLE_VAR=${2:-"nginx_use_service=False"}
 #ANSIBLE_EXTRA_VARS=""
 # ANSIBLE_EXTRA_VARS="-e \"${ANSIBLE_VAR}\""
 
 # OS_VERSION=`cat /etc/redhat-release | grep -oE '[0-9]+\.[0-9]+'|cut -d "." -f1 |head -n 1`
-SUDO=`which sudo 2> /dev/null`
-SUDO_OPTION="--sudo"
+# SUDO=`which sudo 2> /dev/null`
+# SUDO_OPTION="--sudo"
 # if there wasn't sudo then ansible couldn't use it
 # if [ "x$SUDO" == "x" ];then
 #     SUDO_OPTION=""
