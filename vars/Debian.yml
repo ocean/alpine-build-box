@@ -1,0 +1,7 @@
+nginx:
+    document_root: /usr/share/nginx/html/
+    php_engine: fpm
+    port: 80
+    workers: 4
+    nginx_user: "www-data"
+    vhost_path: /etc/nginx/sites-enabled/default
