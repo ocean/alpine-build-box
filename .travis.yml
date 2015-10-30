@@ -35,7 +35,7 @@ script:
   - docker build -t alpine-build-box/alpine:3.2 -f alpine/Dockerfile .
   # - docker run --rm=true -v `pwd`/src:/src:rw alpine-build-box/alpine:3.2 /bin/sh -c build.sh
   # - docker run --rm=true -v ../src:/src:rw alpine-build-box/alpine:3.2 /bin/sh build.sh
-  - docker run --rm=true -v ../src:/src:rw alpine-build-box/alpine:3.2 /bin/sh pwd
+  - docker run --rm=true -v ../src:/src:rw alpine-build-box/alpine:3.2 /bin/pwd
 
 #notifications:
 #  email: false
