@@ -14,28 +14,34 @@ services:
   - docker
 
 before_install:
-  # - docker pull oraclelinux:6
+  - docker pull oraclelinux:6.6
   # - docker pull centos:7
   # - docker pull fedora:23
   - docker pull alpine:3.2
 
 script:
- # Run tests on CentOs 6
-# - docker run --rm=true -v `pwd`:/ansible-nginx:rw centos:6 /bin/bash -c "/ansible-nginx/tests/test-on-rpm.sh $ANSIBLE_VERSION "
+  # Build custom container from Alpine Linux 3.2
+  # - docker build -t alpine-build-box/alpine:3.2 -f alpine/Dockerfile .
+  # - pwd
+  # - ls -al
+  # Run custom container for Gulp command
+  # - docker run --rm=true -v `pwd`/src:/src:rw alpine-build-box/alpine:3.2 /bin/bash build.sh
+
+  # Build custom container from Oracle 6
+  - docker build -t alpine-build-box/oraclelinux:6.6 -f oraclelinux/Dockerfile .
+  # Run custom container for Gulp command
+  - docker run --rm=true -v `pwd`/src:/src:rw alpine-build-box/oraclelinux:6.6 /bin/bash build.sh
+
+  # Build custom container from Fedora 23
+  # - docker build -t alpine-build-box/fedora:23 -f fedora/Dockerfile .
+  # Run custom container for Gulp command
+  # - docker run --rm=true -v `pwd`/src:/src:rw alpine-build-box/fedora:23 /bin/bash build.sh
+
  # Build a custom CentOS 7 container with systemd
  #- docker build -t ansible-nginx-testing/centos7:1 -f tests/Dockerfile-CentOS-7 .
  # Run tests on CentOs 7
 # - docker run --privileged=true --rm=true -v `pwd`:/ansible-nginx:rw centos:7 /bin/bash -c "/ansible-nginx/tests/test-on-rpm.sh $ANSIBLE_VERSION nginx_use_service=False"
  #- docker run --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro -v `pwd`:/ansible-nginx:rw ansible-nginx-testing/centos7:1 /bin/bash -c "/ansible-nginx/tests/test-on-rpm.sh $ANSIBLE_VERSION nginx_use_service=False"
-
- # Run tests on fedora 23
-# - docker run --rm=true -v `pwd`:/ansible-nginx:rw fedora:22 /bin/bash -c "/ansible-nginx/tests/test-on-rpm.sh $ANSIBLE_SHORT_VERSION"
-
-  # Run tests on Alpine Linux 3.2
-  - docker build -t alpine-build-box/alpine:3.2 -f alpine/Dockerfile .
-  # - pwd
-  # - ls -al
-  - docker run --rm=true -v `pwd`/src:/src:rw alpine-build-box/alpine:3.2 /bin/sh build.sh
 
 #notifications:
 #  email: false
