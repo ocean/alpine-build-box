@@ -39,12 +39,12 @@ Tasks
   - Enable PHP-FPM
  -->
 
-License
--------
-
-MIT
-
 Author Information
 ------------------
 
 Drew Robinson
+
+License
+-------
+
+MIT
