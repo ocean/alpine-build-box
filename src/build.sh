@@ -18,7 +18,7 @@ SUDO_OPTION="--sudo"
 set -e
 # yum -y update
 
-cd /src
+# cd /src
 
 npm --version
 
