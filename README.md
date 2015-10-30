@@ -1,10 +1,10 @@
-[![Build Status](https://travis-ci.org/ocean/ansible-nginx.svg)](https://travis-ci.org/ocean/ansible-nginx)
-Role Name
+[![Build Status](https://travis-ci.org/ocean/alpine-build-box.svg)](https://travis-ci.org/ocean/alpine-build-box)
+Alpine Linux CSS & JavaScript Build Box
 ========
 
-Ansible role to install free, open-source, high-performance HTTP server and reverse proxy, as well as an IMAP/POP3 proxy server
+A small, fast, light Docker container based on Alpine Linux for solving dependency problems by running gulp builds inside itself.
 
-Requirements
+<!-- Requirements
 ------------
 
 This role requires Debian/CentOs system
@@ -37,7 +37,7 @@ Tasks
   - Install [nginx](http://nginx.org/)
   - Setup minimal settings using nginx.conf and defaut enabled website
   - Enable PHP-FPM
-
+ -->
 
 License
 -------
@@ -47,4 +47,4 @@ MIT
 Author Information
 ------------------
 
-Valeriy Solovyov
+Drew Robinson
