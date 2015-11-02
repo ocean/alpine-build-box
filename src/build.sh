@@ -10,9 +10,13 @@ echo "---- npm version ----"
 npm --version
 echo "---- running npm install ----"
 npm install
-echo "---- running npm install ----"
-npm install -g gulp
+# echo "---- installing gulp globally ----"
+# npm install -g gulp
 echo "---- running gulp build ----"
-gulp --env=production
+node_modules/gulp/bin/gulp --env=production
+
+ls -al
+ls -al js/
+ls -al css/
 
 exit 0
