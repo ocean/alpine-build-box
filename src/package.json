@@ -16,14 +16,14 @@
     "type": "git",
     "url": "https://bitbucket.org/commerce-wa-ols/drupal-forms.git"
   },
-  "devDependencies": {
+  "dependencies": {
     "chalk": "^1.1.1",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.0.1",
     "gulp-bower": "0.0.10",
     "gulp-concat": "^2.6.0",
     "gulp-if": "^1.2.5",
-    "gulp-sass": "2.0.3",
+    "gulp-sass": "1.3.3",
     "gulp-size": "^2.0.0",
     "gulp-stats": "0.0.3",
     "gulp-uglify": "^1.4.1",
