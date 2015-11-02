@@ -2,6 +2,8 @@
 
 set -e
 
+export SKIP_SASS_BINARY_DOWNLOAD_FOR_CI=true
+
 echo "---- gcc version ----"
 gcc --version
 echo "---- node version ----"

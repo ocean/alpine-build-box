@@ -4,7 +4,6 @@ sudo: required
 env:
   #matrix:
   - ANSIBLE_VERSION=latest
-  - SKIP_SASS_BINARY_DOWNLOAD_FOR_CI=true
 
 branches:
   only:
