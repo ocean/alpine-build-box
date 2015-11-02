@@ -1,0 +1,318 @@
+body.page-content-consumer-complaint.node-type-webform,
+body.page-content-consumer-complaint-0.node-type-webform,
+body.page-consumer-protection-complaint.node-type-webform {
+
+  form {
+
+    margin-bottom: 84px;
+
+    .webform-component--getting-started--have-you-referred-your-complaint-to-any-other-organisation,
+    .webform-component--getting-started--were-the-goods-or-services-intended-for-business-or-personal-use {
+      border-top: 1px dotted darken(desaturate(#cfd8dc, 5%), 0%);
+      padding-top: 11px;
+      margin-top: 24px;
+    }
+
+    .webform-component--getting-started--is-there-a-reason-you-could-not-contact-the-other-party-or-resolve-the-dispute,
+    .webform-component--getting-started--what-did-they-offer-to-do,
+    .webform-component--getting-started--what-was-the-outcome-of-that-complaint {
+      padding-top: 9px;
+    }
+
+    .webform-component--getting-started--business-purposes {
+      margin: 24px 0 0;
+      padding: 15px 15px 5px;
+      border: 1px solid #d7dcde;
+      background-color: #fbfbfb;
+    }
+
+
+    .webform-component--fs-goods-and-services--debt-collectors,
+    .webform-component--fs-goods-and-services--financial-services-description,
+    .webform-component--fs-goods-and-services--home-building-work,
+    .webform-component--fs-goods-and-services--landvaluer-text,
+    .webform-component--fs-goods-and-services--personal-services,
+    .webform-component--fs-goods-and-services--real-estate-or-business-broking-transaction,
+    .webform-component--fs-goods-and-services--residential-park,
+    .webform-component--fs-goods-and-services--residential-tenancy,
+    .webform-component--fs-goods-and-services--retirement-village,
+    .webform-component--fs-goods-and-services--retail-goods,
+    .webform-component--fs-goods-and-services--settlement-transaction-text,
+    .webform-component--fs-goods-and-services--strata-management,
+    .webform-component--fs-goods-and-services--telecommunications-description,
+    .webform-component--fs-goods-and-services--vehicle,
+    .webform-component--fs-goods-and-services--something-else {
+      margin: 24px 0 0;
+      padding: 15px 15px 5px;
+      border: 1px solid #d7dcde;
+      background-color: #fbfbfb;
+    }
+    .webform-component--fs-goods-and-services--was-the-service-a,
+    .webform-component--fs-goods-and-services--was-your-complaint-about-real-estate,
+    .webform-component--fs-goods-and-services--was-your-complaint-about-other,
+    .webform-component--fs-aboutthecomplaint--fs-somethingelse--date-of-purchase-contract,
+    .webform-component--fs-aboutthecomplaint--fs-retailgoods-complaint--details-of-your-complaint-retail2,
+    .webform-component--fs-aboutthecomplaint--fs-residentialtenancy-complaint--type-of-tenancy,
+    .webform-component--fs-aboutthecomplainant--street-name,
+    .webform-component--fs-aboutthecomplainant--home-telephone,
+    .webform-component--fs-abouttherespondent--street-name-respondent,
+    .webform-component--fs-abouttherespondent--contact-information,
+    .webform-component--please-provide-extra-information-about-your-requirements,
+    .webform-component--fs-aboutthecomplaint--fs-residentialparktenancy-complaint--type-of-tenancy-residentialparktenancy,
+    .webform-component--fs-aboutthecomplaint--fs-residentialparktenancy-complaint--fs-lb--residentialparktenancy-complaint-address,
+    .webform-component--fs-aboutthecomplaint--fs-retirementvillages--does-your-complaint-relate-to {
+      border-top: 1px dotted darken(desaturate(#cfd8dc, 5%), 0%);
+      padding-top: 11px;
+      margin-top: 24px;
+
+    }
+
+    // .webform-component--fs-aboutthecomplaint--fs-vehicles--make,
+    // .webform-component--fs-aboutthecomplaint--fs-vehicles--registration-number,
+    // .webform-component--fs-aboutthecomplaint--fs-vehicles--odometer-reading-at-time-of-sale-repair,
+    // .webform-component--fs-aboutthecomplaint--fs-vehicles--date-of-purchase-repair-etc,
+    // .webform-component--fs-aboutthecomplaint--fs-retailgoods-complaint--make,
+    // .webform-component--fs-aboutthecomplaint--fs-retailgoods-complaint--date-of-purchase-contract,
+    // .webform-component--fs-aboutthecomplaint--fs-retailgoods-complaint--invoice-no,
+    // .webform-component--fs-aboutthecomplaint--fs-retailgoods-complaint--cost-of-goods-or-services,
+    // .webform-component--fs-aboutthecomplaint--fs-personalprofessionalservices-complaint--date-of-purchase-contract,
+    // .webform-component--fs-aboutthecomplaint--fs-residentialtenancy-complaint--suburb-place-locality-residentialtenancy-complaint-address,
+    // .webform-component--fs-aboutthecomplaint--fs-residentialtenancy-complaint--state,
+    // .webform-component--fs-aboutthecomplaint--fs-residentialtenancy-complaint--date-tenancy-commenced,
+    // .webform-component--fs-aboutthecomplaint--fs-residentialtenancy-complaint--original-amount-of-bond-paid,
+    // .webform-component--fs-aboutthecomplaint--fs-residentialparktenancy-complaint--date-tenancy-commenced,
+    // .webform-component--fs-aboutthecomplaint--fs-residentialparktenancy-complaint--original-amount-of-bond-paid,
+    // .webform-component--fs-aboutthecomplaint--fs-retirementvillages--fs-retirementvillage-address--suburb-place-locality-retirementvillage,
+    // .webform-component--fs-aboutthecomplaint--fs-retirementvillages--fs-retirementvillage-address--state-retirementvillage,
+    // .webform-component--fs-aboutthecomplaint--fs-realestatebusiness-complaint--suburb,
+    // .webform-component--fs-aboutthecomplaint--fs-stratamanagement--suburb---place---locality,
+    // .webform-component--fs-aboutthecomplaint--fs-landvaluer-complaint--suburb-place-locality-landvaluer,
+    // .webform-component--fs-aboutthecomplaint--fs-stratamanagement--state,
+    // .webform-component--fs-aboutthecomplaint--fs-landvaluer-complaint--state,
+    // .webform-component--fs-aboutthecomplainant--suburb---place---locality,
+    // .webform-component--fs-aboutthecomplainant--lb-complaint-address-outside,
+    // .webform-component--fs-abouttherespondent--suburb-place-locality-respondent,
+    // .webform-component--work-telephone-respondent,
+    // .webform-component--fs-aboutthecomplainant--lb-complaint-address-outside,
+    // .webform-component--fs-abouttherespondent--contact-information--work-telephone-respondent,
+    // .webform-component--fs-aboutthecomplaint--fs-residentialparktenancy-complaint--fs-lb--residentialparktenancy-complaint-address--suburb-place-locality-residentiaparkltenancy-complaint-address,
+    // .webform-component--fs-aboutthecomplaint--fs-residentialparktenancy-complaint--fs-lb--residentialparktenancy-complaint-address--state-residentialparktenancy,
+    // .webform-component--fs-aboutthecomplaint--fs-homebuildingwork-complaint--date-purchased-or-contract-made,
+    // .webform-component--fs-aboutthecomplaint--fs-homebuildingwork-complaint--work-commenced,
+    //  {
+    //   width: 100%;
+
+    //   @include m-breakpoint($breakpoint-tablet) {
+    //     float: left;
+    //     padding-right: 1.25%;
+    //     width: 50%;
+    //   }
+
+    // }
+
+    // .webform-component--fs-aboutthecomplaint--fs-vehicles--model,
+    // .webform-component--fs-aboutthecomplaint--fs-vehicles--year-of-manufacture,
+    // .webform-component--fs-aboutthecomplaint--fs-vehicles--current-odometer-reading,
+    // .webform-component--fs-aboutthecomplaint--fs-vehicles--delivery-date,
+    // .webform-component--fs-aboutthecomplaint--fs-retailgoods-complaint--model,
+    // .webform-component--fs-aboutthecomplaint--fs-retailgoods-complaint--date-work-completed-scheduled-to-be-completed,
+    // .webform-component--fs-aboutthecomplaint--fs-retailgoods-complaint--order-no,
+    // .webform-component--fs-aboutthecomplaint--fs-retailgoods-complaint--how-much-of-the-purchase-price-has-been-paid,
+    // .webform-component--fs-aboutthecomplaint--fs-personalprofessionalservices-complaint--date-work-completed-scheduled-to-be-completed,
+    // .webform-component--fs-aboutthecomplaint--fs-residentialtenancy-complaint--postcode-residentialtenancy-complaint-address,
+    // .webform-component--fs-aboutthecomplaint--fs-residentialtenancy-complaint--country-residentialtenancy-complaint-address,
+    // .webform-component--fs-aboutthecomplaint--fs-residentialtenancy-complaint--date-tenancy-ended,
+    // .webform-component--fs-aboutthecomplaint--fs-residentialtenancy-complaint--amount-of-bond-released,
+    // .webform-component--fs-aboutthecomplaint--fs-residentialparktenancy-complaint--date-tenancy-ended,
+    // .webform-component--fs-aboutthecomplaint--fs-residentialparktenancy-complaint--amount-of-bond-released,
+    // .webform-component--fs-aboutthecomplaint--fs-retirementvillages--fs-retirementvillage-address--postcode-retirementvillage,
+    // .webform-component--fs-aboutthecomplaint--fs-retirementvillages--fs-retirementvillage-address--country-retirementvillage,
+    // .webform-component--fs-aboutthecomplaint--fs-realestatebusiness-complaint--postcode,
+    // .webform-component--fs-aboutthecomplaint--fs-stratamanagement--postcode,
+    // .webform-component--fs-aboutthecomplaint--fs-stratamanagement--country,
+    // .webform-component--fs-aboutthecomplaint--fs-landvaluer-complaint--postcode-landvaluer,
+    // .webform-component--fs-aboutthecomplaint--fs-landvaluer-complaint--country,
+    // .webform-component--fs-aboutthecomplainant--postcode,
+    // .webform-component--fs-aboutthecomplainant--country,
+    // .webform-component--fs-abouttherespondent--postcode-respondent,
+    // .webform-component--email-address-respondent,
+    // .webform-component--fs-abouttherespondent--contact-information--email-address-respondent,
+    // .webform-component--fs-aboutthecomplaint--fs-residentialparktenancy-complaint--fs-lb--residentialparktenancy-complaint-address--postcode-residentialparktenancy-complaint-address,
+    // .webform-component--fs-aboutthecomplaint--fs-residentialparktenancy-complaint--fs-lb--residentialparktenancy-complaint-address--country-residentialparktenancy-complaint-address,
+
+    // .webform-component--fs-aboutthecomplaint--fs-homebuildingwork-complaint--work-completed
+
+    // {
+    //   width: 100%;
+
+    //   @include m-breakpoint($breakpoint-tablet) {
+    //     @include m-clearfix();
+    //     float: left;
+    //     padding-left: 1.25%;
+    //     width: 50%;
+    //   }
+    // }
+
+    .g-half-left {
+      width: 100%;
+      @include m-breakpoint($breakpoint-tablet) {
+        float: left;
+        padding-right: 1.25%;
+        width: 50%;
+      }
+    }
+
+    .g-half-right {
+      width: 100%;
+      @include m-breakpoint($breakpoint-tablet) {
+        @include m-clearfix();
+        float: left;
+        padding-left: 1.25%;
+        width: 50%;
+      }
+    }
+
+    .webform-component--fs-aboutthecomplaint--fs-vehicles--by-lodging-this-complaint-what-are-you-hoping-to-achieve,
+    .webform-component--fs-aboutthecomplaint--fs-retailgoods-complaint--by-lodging-this-complaint-what-are-you-hoping-to-achieve,
+    .webform-component--fs-aboutthecomplaint--fs-retailgoods-complaint--goods-received,
+    .webform-component--fs-aboutthecomplaint--fs-retailgoods-complaint--how-did-you-pay-for-the-goods-or-services,
+    .webform-component--fs-aboutthecomplaint--fs-personalprofessionalservices-complaint--by-lodging-this-complaint-what-are-you-hoping-to-achieve,
+    .webform-component--fs-aboutthecomplaint--fs-somethingelse--how-did-you-pay-for-the-goods-or-services,
+    .webform-component--fs-aboutthecomplaint--fs-residentialtenancy-complaint--by-lodging-this-complaint-what-are-you-hoping-to-achieve,
+    .webform-component--fs-aboutthecomplaint--fs-residentialparktenancy-complaint--by-lodging-this-complaint-what-are-you-hoping-to-achieve,
+    .webform-component--fs-aboutthecomplaint--fs-realestatebusiness-complaint--details-of-your-complaint,
+    .webform-component--fs-aboutthecomplaint--fs-stratamanagement--by-lodging-this-complaint-what-are-you-hoping-to-achieve,
+    .webform-component--fs-aboutthecomplaint--fs-landvaluer-complaint--by-lodging-this-complaint-what-are-you-hoping-to-achieve,
+    .webform-component--fs-aboutthecomplaint--fs-homebuildingwork-complaint--details-of-your-complaint,
+    .webform-component--fs-aboutthecomplaint--fs-retirementvillages--retirementvillages-hoping-to-achieve,
+    .webform-component--fs-aboutthecomplaint--fs-retirementvillages--fs-retirementvillage-address {
+      border-bottom: 1px dotted darken(desaturate(#cfd8dc, 5%), 0%);
+      padding-bottom: 24px;
+      margin-bottom: 10px;
+    }
+
+    // .webform-component--fs-aboutthecomplaint--fs-vehicles--cash-price-,
+    // .webform-component--fs-aboutthecomplaint--fs-retailgoods-complaint--details-of-your-complaint-retail2,
+    // .webform-component--fs-aboutthecomplaint--fs-retailgoods-complaint--by-lodging-this-complaint-what-are-you-hoping-to-achieve,
+    // .webform-component--fs-aboutthecomplaint--fs-retailgoods-complaint--goods-received,
+    // .webform-component--fs-aboutthecomplaint--fs-retailgoods-complaint--how-did-you-pay-for-the-goods-or-services,
+    // .webform-component--fs-aboutthecomplaint--fs-personalprofessionalservices-complaint--goods-or-services,
+    // .webform-component--fs-aboutthecomplaint--fs-personalprofessionalservices-complaint--details-of-your-complaint-retail2,
+    // .webform-component--fs-aboutthecomplaint--fs-personalprofessionalservices-complaint--cost-of-goods-or-services,
+    // .webform-component--fs-aboutthecomplaint--fs-personalprofessionalservices-complaint--how-much-of-the-contract-or-purchase-price-has-been-paid,
+    // .webform-component--fs-aboutthecomplaint--fs-personalprofessionalservices-complaint--how-did-you-pay-for-the-service,
+    // .webform-component--fs-aboutthecomplaint--fs-personalprofessionalservices-complaint--by-lodging-this-complaint-what-are-you-hoping-to-achieve,
+    // .webform-component--fs-aboutthecomplaint--fs-residentialtenancy-complaint--street-name--residentialtenancy-complaint-address,
+    // .webform-component--fs-aboutthecomplaint--fs-residentialtenancy-complaint--details-of-your-complaint-realestate,
+    // .webform-component--fs-aboutthecomplaint--fs-residentialtenancy-complaint--by-lodging-this-complaint-what-are-you-hoping-to-achieve,
+    // .webform-component--fs-aboutthecomplaint--fs-residentialtenancy-complaint--rent-payable,
+    // .webform-component--fs-aboutthecomplaint--fs-residentialtenancy-complaint--rent-period,
+    // .webform-component--fs-aboutthecomplaint--fs-residentialtenancy-complaint--type-of-tenancy,
+    // .webform-component--fs-aboutthecomplaint--fs-residentialparktenancy-complaint--details-of-your-complaint-residentialpark,
+    // .webform-component--fs-aboutthecomplaint--fs-residentialparktenancy-complaint--by-lodging-this-complaint-what-are-you-hoping-to-achieve,
+    // .webform-component--fs-aboutthecomplaint--fs-residentialparktenancy-complaint--fs-lb--residentialparktenancy-complaint-address--street-name--residentialparktenancy-complaint-address,
+    // .webform-component--fs-aboutthecomplaint--fs-residentialparktenancy-complaint--same-as-your-address,
+    // .webform-component--fs-aboutthecomplaint--fs-residentialparktenancy-complaint--type-of-tenancy-residentialparktenancy,
+    // .webform-component--fs-aboutthecomplaint--fs-residentialparktenancy-complaint--do-you-have-a-written-tenancy-agreement,
+    // .webform-component--fs-aboutthecomplaint--fs-residentialparktenancy-complaint--rent-payable,
+    // .webform-component--fs-aboutthecomplaint--fs-residentialparktenancy-complaint--rent-period,
+    // .webform-component--fs-aboutthecomplaint--fs-retirementvillages--different-from-my-address-ie-the-complainants-address,
+    // .webform-component--fs-aboutthecomplaint--fs-retirementvillages--have-you-tried-to-resolve-your-complaint-by-writing-to-village-management,
+    // .webform-component--fs-aboutthecomplaint--fs-retirementvillages--does-your-complaint-relate-to,
+    // .webform-component--fs-aboutthecomplaint--fs-retirementvillages--fs-retirementvillage-address--street-address-retirementvillage,
+    // .webform-component--fs-aboutthecomplaint--fs-realestatebusiness-complaint--details-of-your-complaint,
+    // .webform-component--fs-aboutthecomplaint--fs-realestatebusiness-complaint--sale-of-property,
+    // .webform-component--fs-aboutthecomplaint--fs-realestatebusiness-complaint--property-management,
+    // .webform-component--fs-aboutthecomplaint--fs-realestatebusiness-complaint--street-name,
+    // .webform-component--fs-aboutthecomplaint--fs-settlement--details-of-your-complaint,
+    // .webform-component--fs-aboutthecomplaint--fs-settlement--by-lodging-this-complaint-what-are-you-hoping-to-achieve,
+    // .webform-component--fs-aboutthecomplaint--fs-stratamanagement--details-of-your-complaint-500-wds-max-stratamanagement,
+    // .webform-component--fs-aboutthecomplaint--fs-stratamanagement--by-lodging-this-complaint-what-are-you-hoping-to-achieve,
+    // .webform-component--fs-aboutthecomplaint--fs-stratamanagement--street-name,
+    // .webform-component--fs-aboutthecomplaint--fs-landvaluer-complaint--details-of-your-complaint-landvaluer,
+    // .webform-component--fs-aboutthecomplaint--fs-landvaluer-complaint--by-lodging-this-complaint-what-are-you-hoping-to-achieve,
+    // .webform-component--fs-aboutthecomplaint--fs-landvaluer-complaint--street-address-landvaluer,
+    // .webform-component--fs-aboutthecomplainant--street-name,
+    // .webform-component--fs-aboutthecomplainant--lb-complainant,
+    // .webform-component--fs-aboutthecomplainant--home-telephone,
+    // .webform-component--fs-aboutthecomplainant--email-address,
+    // .webform-component--fs-abouttherespondent--name-of-indvidual-or-business,
+    // .webform-component--fs-abouttherespondent--abn-acn-if-applicable,
+    // .webform-component--fs-abouttherespondent--street-name-respondent,
+    // .webform-component--fs-abouttherespondent--lb-respondent-address-3,
+    // .webform-component--fs-abouttherespondent--contact-information,
+    // .webform-component--fs-abouttherespondent--contact-information--contact-person,
+    // .webform-component--fs-aboutthecomplaint--fs-residentialparktenancy-complaint--fs-lb--residentialparktenancy-complaint-address--street-name--residentialparktenancy-complaint-address,
+    // .webform-component--fs-aboutthecomplaint--fs-residentialparktenancy-complaint--fs-lb--residentialparktenancy-complaint-address,
+    // .webform-component--fs-abouttherespondent--contact-information--web-address,
+    // .webform-component--fs-aboutthecomplaint--fs-homebuildingwork-complaint--building-works,
+    // .webform-component--fs-aboutthecomplaint--fs-homebuildingwork-complaint--details-of-your-complaint,
+    // .webform-component--fs-aboutthecomplaint--fs-homebuildingwork-complaint--by-lodging-this-complaint-what-are-you-hoping-wanting-wishing-to-achieve,
+    // .webform-component--fs-aboutthecomplaint--fs-homebuildingwork-complaint--date-purchased-or-contract-made,
+    // .webform-component--fs-aboutthecomplaint--fs-homebuildingwork-complaint--written-contract,
+    // .webform-component--fs-aboutthecomplaint--fs-homebuildingwork-complaint--by-lodging-this-complaint-what-are-you-hoping-wanting-wishing-to-achieve,
+    // .webform-component--fs-aboutthecomplaint--fs-homebuildingwork-complaint--cost-of-building-works-additions-materials-etc,
+    // .webform-component--fs-aboutthecomplaint--fs-homebuildingwork-complaint--how-much-of-the-contract-or-purchase-price-has-been-paid,
+    // .webform-component--fs-aboutthecomplaint--fs-homebuildingwork-complaint--how-did-you-pay-for-the-service-homebuildingwork,
+    // .webform-component--fs-aboutthecomplaint--fs-retirementvillages--retirementvillages-hoping-to-achieve
+    // {
+    //   display: block;
+    //   width: 100%;
+    //   float: left;
+    // }
+
+    .g-full {
+
+      display: block;
+      width: 100%;
+      float: left;
+    }
+
+
+
+    #edit-submitted-fs-aboutthecomplaint-fs-retailgoods-complaint-attach-retailgoods-other-relevant-documents-ajax-wrapper {
+      label {
+        display: none;
+      }
+    }
+
+
+    .webform-component--fs-aboutthecomplaint--fs-residentialparktenancy-complaint--fs-lb--residentialparktenancy-complaint-address {
+      margin-bottom: 0;
+      legend {
+        padding: 0;
+        margin: 0;
+      }
+    }
+
+    .webform-component--fs-aboutthecomplaint--fs-retirementvillages--fs-retirementvillage-address,
+    .webform-component--fs-abouttherespondent--contact-information {
+        display: block;
+        width: 100%;
+        float: left;
+        margin: 24px 0 0;
+          legend {
+            border-top: 1px dotted darken(desaturate(#cfd8dc, 5%), 0%);
+            padding-top: 19px;
+
+          }
+
+
+    }
+
+
+    fieldset.attach_documents {
+      margin-top: 25px;
+      display: block;
+      float: left;
+      > legend {
+        border-top: 1px dotted darken(desaturate(#cfd8dc, 5%), 0%);
+        padding-top: 20px;
+      }
+      .webform-component-file {
+        // border: 1px solid #333;
+      }
+    }
+  }
+
+}

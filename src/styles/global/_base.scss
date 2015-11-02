@@ -1,0 +1,130 @@
+// Private Imports
+// -----------------------------------------------------------------------------
+
+@import 'variables';
+@import 'mixins';
+@import 'z-index';
+@import 'grid';
+@import 'drupal';
+
+/*==============================================================================
+
+  Base styling
+  Generic styles to bring some base html elements inline
+
+==============================================================================*/
+
+* {
+  box-sizing: border-box;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.page {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 0;
+  position: relative;
+  width: 100%;
+
+  @include m-breakpoint($breakpoint-phablet) {
+    max-width: 720px;
+    padding: 0;
+  }
+
+  @include m-breakpoint($breakpoint-medium) {
+    max-width: 800px;
+    padding: 0;
+  }
+
+  &.with-navigation {
+    padding: 0;
+  }
+}
+
+html {
+  box-sizing: border-box;
+  font-family: $font-family;
+}
+
+body {
+  @include m-clearfix();
+  background-color: $color-lightgrey--background;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+
+  @include m-breakpoint($breakpoint-phablet) {
+    padding: 20px 0;
+  }
+
+  @include m-breakpoint($breakpoint-medium) {
+    padding: 80px 0;
+  }
+
+  &.no-sidebars.node-type-menu-page {
+    background-color: $color-white--base;
+
+    .main-content {
+      padding: 0;
+    }
+
+  }
+
+  &.no-sidebars.page-search {
+    background-color: $color-white--base;
+
+    .main-content {
+      padding: 0;
+    }
+
+  }
+}
+
+hr {
+  border: 0;
+  border-top: 1px dotted $color-grey--border;
+  height: 0;
+  margin: 0 0 20px;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  &:hover { text-decoration: underline; }
+}
+
+ul,
+ol {
+  padding-left: 22px;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}

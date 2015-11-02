@@ -1,0 +1,984 @@
+/*==============================================================================
+
+  Building Complaint
+  Building complaints form specific styles to fix some entityform issues
+
+==============================================================================*/
+
+body.page-eform-submit {
+
+  .tabs {
+    display: none;
+  }
+
+  form {
+
+    h3 {
+      border-bottom: 1px dotted #ddd;
+      margin-bottom: 16px;
+      margin-top: 10px;
+      padding-bottom: 20px;
+    }
+
+    h2 {
+      color: #444;
+      font-size: 18px;
+      margin-bottom: 13px;
+  }
+
+
+//- Ajax Progress    // --------------------------------------------------------
+    .ajax-progress {
+      background: transparent;
+      background-color: rgba(255, 255, 255, .2);
+      color: transparent;
+      height: 100%;
+      overflow: hidden;
+      position: absolute;
+      width: 100%;
+
+      .throbber {
+        display: none;
+      }
+
+    }
+
+//- File Widget // -------------------------------------------------------------
+
+    .field-widget-file-generic {
+      border-bottom: 1px dotted #ccc;
+      margin-bottom: 15px;
+      padding-bottom: 8px;
+      position: relative;
+
+      label {
+        display: block;
+        margin-bottom: 8px;
+      }
+
+      .description {
+        font-size: 13px;
+        margin-top: 5px;
+
+        strong:first-child + {
+          display: none;
+        }
+
+      }
+
+    }
+
+//- Date Widget // -------------------------------------------------------------
+
+    .field-type-datetime {
+
+      .form-item {
+        margin-bottom: 0;
+        width: 100%;
+      }
+
+      .description {
+        display: none;
+      }
+
+      .date-no-float.container-inline-date {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+
+        .date-padding {
+          float: none;
+        }
+
+      }
+
+    }
+
+//- Multiple "Collections" // --------------------------------------------------
+
+    .field-type-field-collection {
+      margin-bottom: 4px;
+
+      .tabledrag-toggle-weight-wrapper {
+        display: none;
+      }
+
+      table.field-multiple-table {
+        margin-top: 20px;
+
+        tr th.field-label label {
+          display: none;
+        }
+
+        td.field-multiple-drag,
+
+        .tabledrag-hide {
+          display: none;
+        }
+
+      }
+
+    }
+
+
+//- Markup // ------------------------------------------------------------------
+
+    .field-type-markup {
+      .form-item { margin: 0; }
+      p { margin-top: 0; }
+    }
+
+//- Markup // ------------------------------------------------------------------
+
+  .field-type-text .form-item { width: 100%; }
+
+
+/*==============================================================================
+
+  Building Complaint
+  Specific styling for each step in the form
+
+==============================================================================*/
+
+//- Step two    // -------------------------------------------------------------
+
+    #dc-price-complaint {
+      .price {
+        border-top: 1px dotted darken(desaturate(#cfd8dc, 5%), 0%);
+        display: block;
+        margin-top: 4px;
+        padding-top: 20px;
+      }
+
+      span.price__label {
+        display: block;
+        font-size: $font-size-medium;
+      }
+
+      span.price__description {
+        color: $color-darkgrey--link;
+        display: block;
+        font-size: $font-size-small;
+      }
+
+    }
+
+    #edit-field-cmp-eligible-concession {
+      border-top: 1px dotted darken(desaturate(#cfd8dc, 5%), 0%);
+      margin-top: 24px;
+      padding-top: 10px;
+    }
+
+    #edit-field-cmp-proof-of-concession {
+      border: 0;
+    }
+
+    #edit-field-cmp-markup-building-servic,
+    #edit-field-cmp-matter-occur {
+      p {
+        margin-bottom: 0;
+      }
+    }
+
+    #edit-field-cmp-building-serviced-date {
+      margin-bottom: 20px;
+    }
+
+//- Step five   // -------------------------------------------------------------
+
+  input[id*='remove-button'] {
+    background-color: #eeeeee;
+    background-image: url(../images/icons/ic_close_24px.svg);
+    background-position: 8px 7px;
+    background-repeat: no-repeat;
+    background-size: 20px, 20px;
+    border: 0;
+    border-bottom: 4px solid #e0e0e0;
+    border-radius: 2px;
+    color: #555;
+    font-size: 15px;
+    font-weight: 500;
+    height: 36px;
+    line-height: 34px;
+    margin: 0;
+    padding: 0 15px 0 36px;
+
+    &:hover {
+      background-position: 8px 8px;
+      border-bottom-width: 2px;
+      line-height: 36px;
+    }
+
+  }
+
+  input[name="field_cmp_contacts_add_more"],
+  input[name="field_complaint_add_more"],
+  .save-item {
+    background-color: #eeeeee;
+    background-image: url(../images/icons/ic_add_24px.svg);
+    background-position: 8px 7px;
+    background-repeat: no-repeat;
+    background-size: 20px, 20px;
+    border: 0;
+    border-bottom: 4px solid #e0e0e0;
+    border-radius: 2px;
+    color: #555;
+    font-size: 15px;
+    font-weight: 500;
+    height: 36px;
+    line-height: 34px;
+    margin: 0;
+    padding: 0 15px 0 36px;
+
+    &:hover {
+      background-position: 8px 8px;
+      border-bottom-width: 2px;
+      line-height: 36px;
+    }
+
+  }
+
+  .contact_address {
+    border-top: 1px dotted darken(desaturate(#cfd8dc, 5%), 0%);
+    margin-top: 24px;
+    padding-top: 10px;
+  }
+
+  .contact_details,
+  .contact_company,
+  .contact_registration,
+  .contact_primary {
+    @include m-clearfix();
+    border-top: 1px dotted darken(desaturate(#cfd8dc, 5%), 0%);
+    margin-top: 24px;
+    padding-top: 10px;
+  }
+
+  .contact_primary {
+    border-bottom: 1px dotted darken(desaturate(#cfd8dc, 5%), 0%);
+    border-top: 1px dotted darken(desaturate(#cfd8dc, 5%), 0%);
+    margin: 24px 0;
+    padding: 10px 0 24px;
+  }
+
+  .contact_registration {
+    @include m-clearfix();
+  }
+
+  .field-name-field-cmp-your-registration {
+    margin-top: 20px;
+  }
+
+
+  div[id^='field-cmp-contacts-add-more-wrapper'] {
+
+    thead label {
+      display: none;
+    }
+
+    .draggable {
+      background-color: lighten(#fafafa, 2%);
+      border: 1px solid lighten(desaturate(#cfd8dc, 5%), 2%);
+      display: block;
+      margin-bottom: 25px;
+      padding: 20px;
+    }
+
+  }
+
+//- Step six    // -------------------------------------------------------------
+
+    .company_contact,
+    .company_info,
+    #edit-field-cmp-their-contact-details,
+    #edit-field-respondent-licensed {
+      @include m-clearfix();
+      border-top: 1px dotted darken(desaturate(#cfd8dc, 5%), 0%);
+      margin-top: 24px;
+      padding-top: 10px;
+    }
+
+    #edit-field-cmp-company legend {
+      display: none;
+    }
+
+    #edit-field-cmp-their-contact-details h2 {
+      margin: 0;
+      padding-top: 10px;
+    }
+
+    #edit-field-cmp-is-respondent {
+      margin-top: 10px;
+    }
+
+    #edit-field-cmp-company-und-0-field-cmp-company-information {
+      margin-top: 11px;
+    }
+
+    #edit-field-cmp-are-you-registered {
+      border-top: 1px dotted darken(desaturate(#cfd8dc, 5%), 0%);
+      margin-top: 25px;
+      padding-top: 20px;
+    }
+
+//- Step eight  // -------------------------------------------------------------
+
+    #edit-field-cmp-type-of-work-markup {
+      display: none;
+    }
+
+    #edit-field-cmp-type-of-work {
+      margin-top: 14px;
+    }
+
+    #edit-field-cmp-your-interest-property,
+    #edit-field-cmp-license-issued {
+      @include m-clearfix();
+      border-top: 1px dotted darken(desaturate(#cfd8dc, 5%), 0%);
+      margin-top: 24px;
+      padding-top: 10px;
+    }
+
+    #edit-field-cmp-attach-documents {
+      border-top: 1px dotted darken(desaturate(#cfd8dc, 5%), 0%);
+      margin-top: 24px;
+      padding-top: 10px;
+
+      h2 {
+        border: 0;
+        font-size: 18px;
+        margin: 0;
+        padding: 0;
+        padding-top: 10px;
+      }
+
+    }
+
+    #edit-field-cmp-workmanship-complaints {
+      border-top: 1px dotted darken(desaturate(#cfd8dc, 5%), 0%);
+      margin-top: 24px;
+      padding-top: 10px;
+
+      legend {
+        border: 0;
+        font-size: 18px;
+        margin: 0;
+        padding: 0;
+        padding-top: 10px;
+      }
+
+    }
+
+    #edit-field-cmp-property-address {
+      border-top: 1px dotted darken(desaturate(#cfd8dc, 5%), 0%);
+      margin-top: 24px;
+      padding-top: 10px;
+
+      legend {
+        border: 0;
+        font-size: 18px;
+        margin: 0;
+        padding: 0;
+        padding-top: 10px;
+      }
+
+    }
+
+
+//- Step nine   // -------------------------------------------------------------
+
+  #edit-field-cmp-desc-complaint {
+    margin-top: 14px;
+  }
+
+  #edit-field-complaint-desc,
+  #edit-field-complaint-und-0-field-remedy-sought,
+  #edit-field-complaint-und-0-field-complaint-more-evidence {
+    border-top: 1px dotted darken(desaturate(#cfd8dc, 5%), 0%);
+    margin-top: 24px;
+    padding-top: 14px;
+  }
+
+
+  div[id^='field-complaint-add-more-wrapper'] {
+    border-top: 1px dotted darken(desaturate(#cfd8dc, 5%), 0%);
+    margin-top: 22px;
+    padding-top: 5px;
+
+    button.save-item {
+      margin-right: 10px;
+    }
+
+    .file-widget {
+      border: 0;
+      margin: 0;
+      padding: 0;
+    }
+
+    tr th.field-label label {
+      display: none !important;
+    }
+
+    .draggable {
+      @include m-clearfix();
+      background-color: lighten(#fafafa, 2%);
+      border: 1px solid lighten(desaturate(#cfd8dc, 5%), 2%);
+      display: block;
+      margin-bottom: 25px;
+      margin-top: 5px;
+      overflow: hidden;
+
+      td {
+        padding: 20px;
+      }
+
+    }
+
+  }
+
+  table#complaints-table {
+    background-color: #ffffff;
+    border: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+    color: #4a4a4a;
+    font-size: 15px;
+    margin-top: 20px;
+    width: 100%;
+
+    thead {
+      border: 0;
+
+      tr {
+        border: 0;
+
+        th {
+          background-color: $color-blue--button;
+          border: 1px solid $color-blue--button;
+          color: #ffffff;
+          font-size: 16px;
+          height: 38px;
+          padding: 10px 15px;
+          text-align: left;
+          word-wrap: break-word;
+        }
+
+      }
+
+    }
+
+    tr {
+      border: 0;
+
+      &:nth-child(even) {
+        background-color: #f7f7f7;
+      }
+
+      th {
+        background-color: #e0e2e3;
+        border-bottom: 1px solid $color-grey--border;
+        border-left: 1px solid $color-grey--border;
+        border-right: 1px solid $color-grey--border;
+        border-top: 0;
+        color: #323232;
+        font-weight: 500 !important;
+        padding: 10px 15px;
+        vertical-align: top;
+      }
+
+      td {
+        border-bottom: 1px solid $color-grey--border;
+        border-left: 1px solid $color-grey--border;
+        border-right: 1px solid $color-grey--border;
+        border-top: 0;
+        font-weight: normal;
+        height: 40px;
+        padding: 12px 15px 10px;
+        text-align: left;
+        vertical-align: top;
+        word-wrap: break-word;
+
+        &:first-child {
+          text-align: left;
+        }
+
+      }
+
+    }
+
+  }
+
+
+//- Step ten    // -------------------------------------------------------------
+
+    #edit-field-step-9-decloration {
+      p {
+        margin: 0;
+      }
+    }
+
+    #field-cmp-date-of-service-add-more-wrapper {
+
+      label[for="edit-field-cmp-date-of-service-und-0"] {
+        display: none;
+      }
+
+    }
+
+    #edit-field-cmp-served-docs-marku,
+    #edit-field-cmp-method-of-service {
+      border-top: 1px dotted darken(desaturate(#cfd8dc, 5%), 0%);
+      margin-top: 24px;
+      padding-top: 10px;
+
+      h2 {
+        border: 0;
+        font-size: 18px;
+        margin: 0;
+        padding: 0;
+        padding-top: 10px;
+      }
+
+    }
+
+
+
+  #edit-field-cmp-supporting-documents,
+  #edit-field-cmp-proof-of-concession {
+    border: 0;
+  }
+
+  #edit-field-cmp-interpreter-more,
+  #edit-field-cmp-special-req-info,
+  #edit-field-cmp-disability-more {
+    border-top: 1px dotted darken(desaturate(#cfd8dc, 5%), 0%);
+    margin-top: 24px;
+    padding-top: 10px;
+  }
+
+//- Step eleven // -------------------------------------------------------------
+
+    .complaint-price {
+      margin: 24px 0 16px;
+    }
+
+    #edit-field-cmp-make-payment {
+      background-color: $color-lightgrey--background;
+      border: 1px solid #eee;
+      margin: 20px 0;
+      padding: 18px;
+      padding-bottom: 2px;
+
+      em {
+        font-weight: 500;
+      }
+
+      a.btn.btn--blue {
+        background-color: #0b7b97;
+        border: 0;
+        border-bottom: 4px solid #434a54;
+        border-bottom-color: #095676;
+        border-radius: 2px;
+        color: #ffffff;
+        display: inline-block;
+        font-size: 16px;
+        font-weight: bold;
+        height: 40px;
+        line-height: 40px;
+        margin-right: 5px;
+        padding: 0 30px;
+      }
+    }
+
+//- Step twelve // -------------------------------------------------------------
+
+    #edit-field-cmp-accept-decloration p {
+      margin: 0;
+    }
+
+    #edit-field-cmp-copy-for-records {
+      border-top: 1px dotted darken(desaturate(#cfd8dc, 5%), 0%);
+      margin-top: 24px;
+      padding-top: 10px;
+    }
+
+//- Input specific styling -----------------------------------------------------
+
+
+    .field-name-field-cmp-registration,
+    .field-name-field-cmp-your-registration {
+      background-color: $color-lightgrey--background;
+      border: 1px solid #e6e6e6;
+      border-bottom: 0;
+      margin-top: 20px;
+      padding: 23px 23px 10px;
+
+      p {
+        margin: 0;
+        padding: 0;
+      }
+
+    }
+
+    .field-name-field-cmp-license-type,
+    .field-name-field-cmp-your-license-type {
+      background-color: $color-lightgrey--background;
+      border-left: 1px solid #e6e6e6;
+      border-right: 1px solid #e6e6e6;
+      padding: 0 23px 8px;
+
+      @include m-breakpoint($breakpoint-tablet) {
+        border: 0;
+        border-bottom: 1px solid #e6e6e6;
+        border-left: 1px solid #e6e6e6;
+        padding: 0 0 23px 23px;
+      }
+
+    }
+
+    .field-name-field-cmp-license-number,
+    .field-name-field-cmp-your-license-number {
+      background-color: $color-lightgrey--background;
+      border: 1px solid #e6e6e6;
+      border-top: 0;
+      padding: 0 23px 23px;
+
+      @include m-breakpoint($breakpoint-tablet) {
+        border-bottom: 1px solid #e6e6e6;
+        border-left: 0;
+        border-right: 1px solid #e6e6e6;
+        padding-bottom: 23px;
+        padding-right: 23px;
+      }
+
+    }
+
+    .field-name-field-cmp-contact-title,
+    .field-name-field-company-contact-title {
+      @include m-clearfix();
+      display: inline-block;
+      width: 100%;
+
+      @include m-breakpoint($breakpoint-tablet) {
+        width: 20%;
+      }
+
+    }
+
+    .field-name-field-cmp-contact-first-name,
+    .field-name-field-company-contact-first-name,
+    .field-name-field-cmp-contact-last-name,
+    .field-name-field-company-contact-last-name    {
+      display: inline-block;
+      margin-top: 2px;
+      width: 100%;
+      @include m-clearfix();
+
+      @include m-breakpoint($breakpoint-tablet) {
+        padding-left: 2.5%;
+        width: 40%;
+      }
+
+    }
+
+    .field-name-field-cmp-contact-street-number,
+    .field-name-field-cmp-company-street,
+    .field-name-field-cmp-property-street {
+      @include m-clearfix();
+      display: inline-block;
+      width: 100%;
+
+      @include m-breakpoint($breakpoint-tablet) {
+        padding-right: 1.25%;
+        width: 30%;
+      }
+
+    }
+
+    .field-name-field-cmp-contact-street-name,
+    .field-name-field-cmp-company-street-name,
+    .field-name-field-cmp-property-street-name {
+      @include m-clearfix();
+      display: inline-block;
+      width: 100%;
+
+      @include m-breakpoint($breakpoint-tablet) {
+        padding-left: 1.25%;
+        width: 70%;
+      }
+
+    }
+
+    // Suburb input styling
+
+    .field-name-field-cmp-contact-suburb,
+    .field-name-field-cmp-company-suburb,
+    .field-name-field-cmp-property-suburb {
+      display: inline-block;
+      width: 100%;
+
+      @include m-breakpoint($breakpoint-tablet) {
+        padding-right: 1.25%;
+        width: 50%;
+      }
+
+    }
+
+    // Postcode input styling
+
+    .field-name-field-cmp-contact-postcode,
+    .field-name-field-cmp-company-postcode,
+    .field-name-field-cmp-property-postcode {
+      display: inline-block;
+      width: 100%;
+
+      @include m-breakpoint($breakpoint-tablet) {
+        padding-left: 1.25%;
+        width: 50%;
+      }
+
+    }
+
+    //Country input styling
+
+    .field-name-field-cmp-contact-country,
+    .field-name-field-cmp-company-country,
+    .field-name-field-cmp-property-country {
+      display: inline-block;
+      width: 100%;
+
+      @include m-breakpoint($breakpoint-tablet) {
+        padding-left: 1.25%;
+        width: 50%;
+      }
+
+    }
+
+    .field-name-field-cmp-your-license-type,
+    .field-name-field-cmp-license-type {
+      width: 100%;
+
+      @include m-breakpoint($breakpoint-tablet) {
+        float: left;
+        padding-right: 1.25%;
+        width: 50%;
+      }
+
+    }
+
+    .field-name-field-cmp-your-license-number,
+    .field-name-field-cmp-license-number {
+      width: 100%;
+
+      @include m-breakpoint($breakpoint-tablet) {
+        @include m-clearfix();
+        float: left;
+        padding-left: 1.25%;
+        width: 50%;
+      }
+
+    }
+
+
+    .field-name-field-cmp-home-telephone,
+    .field-name-field-cmp-company-home-telephone,
+    .field-name-field-email-address,
+    .field-name-field-cmp-company-email-address {
+      width: 100%;
+
+      @include m-breakpoint($breakpoint-tablet) {
+        @include m-clearfix();
+        float: left;
+        padding-right: 1.25%;
+        width: 50%;
+      }
+
+    }
+
+    .field-name-field-cmp-work-telephone,
+    .field-name-field-cmp-company-work-telephone,
+    .field-name-field-cmp-mobile,
+    .field-name-field-cmp-company-mobile {
+      width: 100%;
+
+      @include m-breakpoint($breakpoint-tablet) {
+        display: inline-block;
+        padding-left: 1.25%;
+        width: 50%;
+      }
+
+    }
+
+    .field-name-field-cmp-contact-state,
+    .field-name-field-cmp-property-state,
+    .field-name-field-cmp-contact-state-other,
+    .field-name-field-cmp-company-state-other,
+    .field-name-field-cmp-company-state {
+      @include m-clearfix();
+      width: 100%;
+
+      @include m-breakpoint($breakpoint-tablet) {
+        float: left;
+        padding-right: 1.25%;
+        width: 50%;
+      }
+
+    }
+
+    .field-name-field-cmp-company-trading-name {
+      @include m-clearfix();
+      width: 100%;
+
+      @include m-breakpoint($breakpoint-tablet) {
+        float: left;
+        padding-right: 1.25%;
+        width: 50%;
+      }
+
+    }
+
+    .field-name-field-cmp-company-abn-acn {
+      @include m-clearfix();
+      width: 100%;
+
+      @include m-breakpoint($breakpoint-tablet) {
+        @include m-clearfix();
+        float: left;
+        padding-left: 1.25%;
+        width: 50%;
+      }
+
+    }
+
+
+  // Multiple File Upload table :/ needs more work -----------------------------
+
+    .field-widget-file-generic {
+      div[id^='edit-field-cmp-supporting-documents'],
+      div[id^='edit-field-complaint-und'],
+      div[id*='field-supporting-evidence'] {
+
+        legend {
+          border: 0;
+          color: #444;
+          font-size: 16px;
+        }
+
+        label {
+          display: none;
+        }
+
+        table {
+          border-collapse: separate;
+          width: 100%;
+
+          thead {
+            display: none;
+          }
+
+          tbody {
+            tr {
+              td {
+                border-bottom: 1px dotted darken(desaturate(#cfd8dc, 5%), 0%);
+                padding: 0 !important;
+
+                a.tabledrag-handle {
+                  display: none;
+                }
+
+                input {
+                  background: none;
+                  background-color: transparent;
+                  border: 0;
+                  border-radius: 0;
+                  color: #0b7b97;
+                  float: right;
+                  font-weight: 400;
+                  height: auto;
+                  line-height: 36px;
+                  padding: 0;
+
+                  &:hover {
+                    border: 0;
+                    height: auto;
+                    line-height: 36px;
+                    text-decoration: underline;
+                  }
+
+                }
+
+              }
+
+            }
+
+          }
+
+        }
+
+        .tabledrag-toggle-weight-wrapper {
+          display: none;
+        }
+
+        .file-size {
+          font-size: 13px;
+        }
+
+      }
+
+    }
+
+
+
+    table[id*='field-supporting-evidence'] {
+      .draggable {
+        border: 0;
+        display: block !important;
+        width: 100%;
+
+        &:first-child td {
+          width: 100%;
+        }
+
+      }
+
+    }
+
+    div[id^='edit-field-cmp-supporting-documents'],
+    div[id^='edit-field-complaint-und'] {
+
+      legend {
+        border: 0;
+      }
+
+    }
+
+    select.edit-field-cmp-supporting-documents-und-weight {
+      display: none !important;
+    }
+
+    select[id*='supporting-evidence'] {
+      display: none;
+    }
+
+
+    .sticky-header {
+      display: none;
+    }
+
+    fieldset.form-wrapper {
+      margin: 0;
+      padding: 0;
+    }
+
+    #edit-field-cmp-submit-a-complaint {
+      margin: 20px 0;
+    }
+
+    table.field-multiple-table {
+      text-align: left;
+      width: 100% !important;
+    }
+
+// ---- Put Stuff Before ME! - Closing tags ------------------------------------
+  }
+}

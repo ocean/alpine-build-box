@@ -1,0 +1,141 @@
+/*==============================================================================
+
+  Typography
+
+==============================================================================*/
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family;
+  margin: 0;
+  padding: 0;
+  color: $color-darkgrey--heading;
+}
+
+h1 {
+  line-height: $line-height-loose;
+  font-weight: $font-weight-base;
+  @include m-font-size($font-size-larger);
+  @include m-breakpoint($breakpoint-tablet) {
+    line-height: $line-height-base;
+    @include m-font-size($font-size-largest);
+  }
+  @include m-breakpoint($breakpoint-medium) {
+    line-height: $line-height-tight;
+    @include m-font-size($font-size-jumbo);
+  }
+  @include m-breakpoint($breakpoint-large) {
+    line-height: $line-height-tight;
+    @include m-font-size($font-size-jumbo);
+  }
+}
+
+h2 {
+  font-weight: $font-weight-medium;
+  @include m-font-size($font-size-large);
+  @include m-breakpoint($breakpoint-tablet) {
+    line-height: $line-height-tighter;
+    @include m-font-size($font-size-larger);
+  }
+  @include m-breakpoint($breakpoint-medium) {
+    @include m-font-size($font-size-larger);
+    line-height: $line-height-tight;
+  }
+  @include m-breakpoint($breakpoint-large) {
+    @include m-font-size($font-size-larger);
+    line-height: $line-height-tight;
+  }
+}
+
+h3 {
+  @include m-font-size($font-size-medium);
+  font-weight: $font-weight-medium;
+  line-height: $line-height-tighter;
+  @include m-breakpoint($breakpoint-tablet) {
+    @include m-font-size($font-size-medium);
+    line-height: $line-height-tight;
+  }
+  @include m-breakpoint($breakpoint-medium) {
+    @include m-font-size($font-size-large);
+    line-height: $line-height-tightest;
+  }
+  @include m-breakpoint($breakpoint-large) {
+    @include m-font-size($font-size-large);
+    line-height: $line-height-tightest;
+  }
+}
+
+
+h4 {
+  @include m-font-size($font-size-base);
+  font-weight: $font-weight-medium;
+  line-height: $line-height-tightest;
+  @include m-breakpoint($breakpoint-tablet) {
+    @include m-font-size($font-size-base);
+    line-height: $line-height-tightest;
+  }
+  @include m-breakpoint($breakpoint-medium) {
+    @include m-font-size($font-size-medium);
+    line-height: $line-height-tighter;
+  }
+  @include m-breakpoint($breakpoint-large) {
+    @include m-font-size($font-size-medium);
+    line-height: $line-height-tighter;
+  }
+}
+
+h5 {
+  @include m-font-size($font-size-base);
+  line-height: $line-height-tightest;
+  font-weight: $font-weight-base;
+  @include m-breakpoint($breakpoint-tablet) {
+    @include m-font-size($font-size-base);
+  }
+  @include m-breakpoint($breakpoint-medium) {
+    @include m-font-size($font-size-medium);
+  }
+  @include m-breakpoint($breakpoint-large) {
+    @include m-font-size($font-size-medium);
+  }
+}
+
+h6 {
+  @include m-font-size($font-size-base);
+  font-weight: $font-weight-medium;
+}
+
+body {
+  @include m-font-size($font-size-smaller);
+  line-height: $line-height-base;
+  font-weight: $font-weight-base;
+  color: $color-darkgrey--bodycopy;
+  @include m-breakpoint($breakpoint-tablet) {
+    @include m-font-size($font-size-small);
+  }
+  @include m-breakpoint($breakpoint-medium) {
+    @include m-font-size($font-size-base);
+  }
+  @include m-breakpoint($breakpoint-large) {
+    @include m-font-size($font-size-base);
+
+  }
+}
+
+
+p {
+  line-height: $line-height-loose;
+}
+
+
+a {
+  color: $color-blue--link;
+
+}
+
+a:hover {
+  color: $color-blue--linkHover;
+  text-decoration: underline;
+}
+
+strong {
+  font-weight: $font-weight-bold;
+}
+

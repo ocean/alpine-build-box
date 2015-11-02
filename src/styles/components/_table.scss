@@ -1,0 +1,72 @@
+// ==============================================================================
+
+//   TABLE LAYOUTS
+//   Tables are Satans own way of displaying data.
+
+// ==============================================================================
+
+// Standard Table // --------------------------------------------------
+
+
+// table {
+//   width: 100%;
+//   background-color: #ffffff;
+//   border-collapse: collapse;
+//   border-spacing: 0;
+//   font-size: 14px;
+//   color: #4a4a4a;
+//   border: 0;
+//   margin-top: 20px;
+//   margin-bottom: 20px;
+//   zoom: 0.95;
+// }
+
+// table thead {
+//   border: 0;
+// }
+
+// table thead tr {
+//   border: 0;
+// }
+
+// table thead tr th {
+//   background-color: $color-blue--button;
+//   border: 1px solid $color-blue--button;
+//   color: #ffffff;
+//   font-size: 16px;
+//   padding: 10px 15px;
+//   height: 38px;
+//   text-align: left;
+//   word-wrap: break-word;
+// }
+
+// table tbody {
+//   border: 0;
+// }
+
+// table tbody tr {
+//   border: 0;
+//   &:nth-child(even) {
+//     background-color: #f7f7f7;
+//   }
+// }
+
+
+// table tbody tr  td {
+//   border-bottom: 1px solid #c4c4c4;
+//   border-right: 1px solid #c4c4c4;
+//   border-top: none;
+//   border-left: 1px solid #c4c4c4;
+//   padding: 10px 15px;
+//   height: 40px;
+//   vertical-align: top;
+//   text-align: left;
+//   word-wrap: break-word;
+
+//   &:first-child {
+//     text-align: left;
+//   }
+// }
+
+
+

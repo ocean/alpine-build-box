@@ -1,0 +1,147 @@
+/*==============================================================================
+
+  Header
+
+==============================================================================*/
+
+.header__primary {
+  max-width: 800px;
+  height: 55px;
+  margin: 0 auto;
+  background-color: #363636;
+  z-index: $z-index9;
+  border-radius: 0;
+  @include m-breakpoint($breakpoint-phablet) {
+    border-radius: 2px 2px 0 0;
+  }
+}
+
+html body.admin-menu {
+  .header__primary {
+    top: 29px;
+    @include m-breakpoint($breakpoint-medium) {
+      top: auto;
+    }
+  }
+}
+
+.header__pagination {
+  position: absolute;
+  right: 10px;
+  color: #ffffff;
+  top: 18px;
+  font-size: 15px;
+  font-weight: 500;
+  @include m-breakpoint($breakpoint-phablet) {
+    right: 20px;
+  }
+}
+
+.header__logo {
+  padding-left: 66px;
+  height: 55px;
+  width: 0px;
+  background-color: $color-white--base;
+  background-image: url('../images/cmmc-logo-ie.png');
+  background-image: none, url('../images/cmmc-logo-small.png');
+  background-position: center 0px;
+  background-repeat: no-repeat;
+  background-size: 62px, 58px;
+  overflow: hidden;
+  left: 10px;
+  position: absolute;
+  z-index: $z-index6;
+  @include m-breakpoint($breakpoint-medium) {
+    left: 20px;
+  }
+
+}
+
+
+.header__site-name {
+  position: absolute;
+  left: 90px;
+  height: 50px;
+  font-size: $font-size-small;
+  font-weight: $font-weight-medium;
+  line-height: 16px;
+  top: 10px;
+  @include m-breakpoint($breakpoint-medium) {
+    zoom: 0.95;
+    left: 105px;
+    top: 8px;
+    line-height: 19px;
+    font-size: $font-size-large;
+  }
+}
+
+.header__site-name a {
+  text-decoration: none;
+  color: $color-white--base;
+}
+
+.header__site-name .header__tagline {
+  display: block;
+  font-size: 11px;
+  font-weight: $font-weight-base;
+  @include m-breakpoint($breakpoint-medium) {
+    font-size: $font-size-micro;
+  }
+}
+
+
+body.test-data {
+
+  .header__primary {
+    border-radius: 0;
+  }
+  .systest {
+    height: 40px;
+    width: 100%;
+    font-size: 13px;
+    background-color: #43A047;
+    line-height: 40px;
+    padding: 0px 20px;
+    border-radius: 2px 2px 0 0;
+    color: #fff;
+    position: relative;
+  }
+
+  .wrapper-test {
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 0 2px 0 0;
+    a {
+      width: 150px;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+      display: block;
+      height: 40px;
+      line-height: 42px;
+      color: white;
+      font-weight: 500;
+      padding: 0 20px;
+      border-radius: 0 2px 0 0;
+    }
+
+    a[data-test-data='false'] {
+      background-color: rgba(255, 255, 255, 0.2);
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.3);
+      }
+    }
+
+    a[data-test-data='true'] {
+      background-color: #EF5350;
+
+      &:hover {
+        background-color: lighten( #EF5350, 2% );
+      }
+    }
+  }
+}
+
+

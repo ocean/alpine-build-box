@@ -1,0 +1,109 @@
+/*==============================================================================
+
+  Drupal specific styles
+  When we need to bring drupal into line put the rules in here
+
+==============================================================================*/
+
+/* body */ .not-logged-in .tabs { display: none; }
+
+.tabs {
+  margin-bottom: 20px;
+  width: 100%;
+
+  ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: inline;
+      float: left;
+      height: auto;
+      margin: 0;
+
+      a {
+        background: $color-blue--link;
+        border-bottom: 1px solid $color-blue--link;
+        color: #ffffff;
+        display: block;
+        font-weight: bold;
+        margin-right: 1px;
+        padding: 8px 15px 7px;
+        text-align: center;
+        text-decoration: none;
+
+        &.active {
+          background-color: #ffffff;
+          border-bottom: 0;
+          border: 1px dotted $color-grey--border;
+          color: $color-blue--link;
+
+          &:hover {
+            border-bottom: 0px;
+            border: 1px solid $color-blue--linkHover;
+            color: #ffffff;
+          }
+
+        }
+
+        &:hover {
+          background: $color-blue--linkHover;
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+
+.messages-container {
+  border-bottom: 1px solid #c5c5c5;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+div.messages { // Drupal override - requires the div. QualifyingElement fail.
+  border: 1px solid;
+  padding: 14px 20px 13px;
+  margin: 0 0 10px 0;
+  background-image: none;
+
+  &.status {
+    background-color: transparentize(#A0D468, 0.7);
+    border-color: transparentize(#A0D468, 0.5);
+  }
+
+  &.error {
+    background-color: #F8EFE5;
+    border-color: #D8C09E;
+  }
+}
+
+
+.dev-bar {
+  position: fixed;
+  height: 30px;
+  bottom: 0px;
+  width: 100%;
+  background-color: #43A047;
+
+  .wrapper-test {
+    width: 500px;
+    margin: 0 auto;
+
+  }
+
+  a.test {
+    height: 30px;
+    color: #fff;
+    line-height: 30px;
+    font-size: 12px;
+    background-color: #1B5E20;
+    display: block;
+    float: right;
+    padding: 0 10px;
+  }
+}

@@ -1,0 +1,119 @@
+// Color Variables
+// Syntax: <property>-<value>--<componentname>
+// Variable names in our CSS are also strictly structured. This syntax provides
+// strong associations between property, use, and component. **rewrite**
+// -----------------------------------------------------------------------------
+
+// #ffffff
+$color-white--base:           rgb(255,255,255);   // #FFFFFF
+$color-offwhite--background:  rgb(251,251,251);   // #FBFBFB
+
+// Shades
+$color-grey--link:             rgb(141,141,141);  // #8D8D8D
+$color-grey--linkHover:        rgb(235,235,235);  // #EBEBEB
+$color-grey--border:           rgb(197,197,197);  // #C5C5C5
+$color-grey--heading:          rgb(113,113,113);  // #717171
+$color-darkgrey--heading:      rgb(37,37,37);     // #252525
+$color-darkgrey--link:         rgb(119,119,119);  // #777777
+$color-darkgrey--bodycopy:     rgb(68,68,68);     // #444444
+$color-lightgrey--background:  rgb(246,246,246);  // #F6F6F6
+$color-lightgrey--border:      rgb(224,224,224);  // #e0e0e0
+
+// Commerce colours
+
+
+
+
+// Blue
+$color-blue--link:             rgb(11,123,151);
+$color-blue--linkHover:        rgb(28,157,190);
+$color-blue--button:           rgb(11,123,151);
+$color-blue--buttonHover:      rgb(28,157,190);
+$color-blue--buttonborder:       rgb(9,86,118);
+$color-blue--background:      rgb(246,246,246);
+$color-blue--border:           rgb(11,123,151);
+
+// Orange
+$color-orange--button:          rgb(231,85,46);
+$color-orange--buttonHover:    rgb(236,126,82);
+$color-orange--buttonBorder:    rgb(167,54,24);
+$color-orange--background:    rgb(248,239,229);
+$color-orange--border:        rgb(216,192,158);
+
+// Royal Blue
+$color-royalblue--button:      rgb(52,129,195);
+$color-royalblue--buttonborder: rgb(22,83,135);
+
+// Light Blue
+$color-lightblue--button:       rgb(61,150,201);
+$color-lightblue--buttonborder: rgb(23,115,168);
+
+// Green
+$color-green--button:          rgb(12,158,91);
+$color-green--buttonborder:    rgb(11,108,63);
+
+// Mustard
+$color-mustard--button:        rgb(215,192,62);
+$color-mustard--buttonborder:  rgb(154,137,42);
+
+// Purple
+$color-purple--button:        rgb(183,124,211);
+$color-purple--buttonborder:   rgb(140,68,174);
+
+// Red
+$color-red--button:             rgb(197,68,68);
+$color-red--buttonborder:       rgb(145,38,38);
+
+
+//Social Media Colours
+$color-twitter--base:         rgb(0, 172, 237);
+$color-facebook--base:        rgb(59, 89, 152);
+$color-linkedin--base:        rgb(0, 123, 182);
+
+
+
+// Font Scale Variables
+// -----------------------------------------------------------------------------
+$font-size-micro:         12px;
+$font-size-smallest:      13px;
+$font-size-smaller:       14px;
+$font-size-small:         15px;
+$font-size-base:          16px;
+$font-size-medium:        18px;
+$font-size-large:         20px;
+$font-size-larger:        22px;
+$font-size-largest:       24px;
+$font-size-jumbo:         30px;
+
+// Font Weights Variables
+// -----------------------------------------------------------------------------
+$font-weight-light:        300;
+$font-weight-base:         400;
+$font-weight-medium:       500;
+$font-weight-bold:         700;
+
+
+// Line Height Variables
+// -----------------------------------------------------------------------------
+$line-height-tightest:   1.000;
+$line-height-tighter:    1.125;
+$line-height-tight:      1.250;
+$line-height-base:       1.375;
+$line-height-loose:      1.500;
+$line-height-looser:     1.625;
+$line-height-loosest:    1.750;
+
+// Font Specific
+// -----------------------------------------------------------------------------
+
+$font-family: 'RobotoDraft', sans-serif;
+$font-base--size:                  16px;
+
+// Breakpoints
+// -----------------------------------------------------------------------------
+
+$breakpoint-large:    1220px;
+$breakpoint-medium:    980px;
+$breakpoint-tablet:    768px;
+$breakpoint-phablet:   500px;
+$breakpoint-mobile:    480px;

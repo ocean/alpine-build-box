@@ -1,0 +1,16 @@
+/**
+ * Firefox specific rules
+ * Firefox needs a couple of specific overrides to get things working.
+ *
+ */
+
+
+/* body */.ff.page-eform {
+
+  form .field-name-field-cmp-contact-title,
+  form .field-name-field-company-contact-title {
+    float: left;
+    margin-top: 2px;
+  }
+
+}

@@ -1,0 +1,33 @@
+{
+  "name": "commerce-drupal-forms-bower-file",
+  "version": "0.0.1",
+  "description": "Bower for the build dependencies for the Commerce Drupal Forms.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Cyrus Eftos <cyrus.eftos@commerce.wa.gov.au>",
+  "contributors": {
+    "name": "Drew Robinson",
+    "email": "<drew.robinson@commerce.wa.gov.au>"
+  },
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/commerce-wa-ols/drupal-forms.git"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "chosen": "~1.4.2",
+    "jquery-formatcurrency": "~1.4.0",
+    "jquery.browser": "~0.0.8",
+    "jquery.eye": "https://github.com/Xaxis/jquery.eye.git#~1.2.0",
+    "jquery.limit": "http://jquery-limit.googlecode.com/files/jquery.limit-1.2.source.js",
+    "js-cookie": "~2.0.3"
+  }
+}
