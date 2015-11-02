@@ -13,7 +13,7 @@ npm install
 # echo "---- installing gulp globally ----"
 # npm install -g gulp
 echo "---- running gulp build ----"
-node_modules/gulp/bin/gulp --env=production
+node_modules/gulp/bin/gulp.js --env=production
 
 ls -al
 ls -al js/
