@@ -10,6 +10,8 @@ echo "---- npm version ----"
 npm --version
 echo "---- running npm install ----"
 npm install
+echo "---- running npm install ----"
+npm install -g gulp
 echo "---- running gulp build ----"
 gulp --env=production
 

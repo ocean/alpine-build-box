@@ -17,7 +17,7 @@ before_install:
   - docker pull oraclelinux:6.6
   # - docker pull centos:7
   # - docker pull fedora:23
-  - docker pull alpine:3.2
+  # - docker pull alpine:3.2
 
 script:
   # Build custom container from Alpine Linux 3.2
@@ -43,7 +43,7 @@ script:
 # - docker run --privileged=true --rm=true -v `pwd`:/ansible-nginx:rw centos:7 /bin/bash -c "/ansible-nginx/tests/test-on-rpm.sh $ANSIBLE_VERSION nginx_use_service=False"
  #- docker run --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro -v `pwd`:/ansible-nginx:rw ansible-nginx-testing/centos7:1 /bin/bash -c "/ansible-nginx/tests/test-on-rpm.sh $ANSIBLE_VERSION nginx_use_service=False"
 
-#notifications:
-#  email: false
-#  hipchat:
-#    rooms:
+notifications:
+  email: false
+    # on_success: change
+    # on_failure: never
