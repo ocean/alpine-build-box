@@ -1,9 +1,10 @@
 FROM oraclelinux:6
 # RUN curl --silent --location https://rpm.nodesource.com/setup_0.12 | bash -
 # RUN yum update -y && yum install -y gcc gcc-c++ nodejs && rm -rf /var/cache/yum/*
-RUN yum update -y && yum install -y gcc gcc-c++ git && rm -rf /var/cache/yum/*
+# RUN yum update -y && yum install -y gcc gcc-c++ git && rm -rf /var/cache/yum/*
+RUN yum update -y && yum install -y clang git && rm -rf /var/cache/yum/*
 RUN curl https://rpm.nodesource.com/pub_0.12/el/6/x86_64/nodejs-0.12.7-1nodesource.el6.x86_64.rpm -o /root/nodejs-0.12.7-1nodesource.el6.x86_64.rpm && yum install -y /root/nodejs-0.12.7-1nodesource.el6.x86_64.rpm
 # VOLUME [ "/sys/fs/cgroup" ]
-# COPY package.json /src/
+ENV CC=/usr/bin/clang CXX=/usr/bin/clang++
 WORKDIR /src
-CMD [ "gcc", "--version" ]
+CMD [ "node", "--version" ]
