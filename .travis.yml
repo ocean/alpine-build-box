@@ -25,7 +25,7 @@ script:
   # - pwd
   # - ls -al
   # Run custom container for Gulp command
-  - docker run --rm=true -v `pwd`/src:/src:rw alpine-build-box/alpine:3.2 /bin/bash build.sh
+  - docker run --rm=true -v `pwd`/src:/src:rw alpine-build-box/alpine:3.2 /bin/sh build.sh
 
   # Build custom container from Oracle 6
   # - docker build -t alpine-build-box/oraclelinux:6.6 -f oraclelinux/Dockerfile .
