@@ -14,23 +14,23 @@ services:
   - docker
 
 before_install:
-  - docker pull oraclelinux:6.6
+  # - docker pull oraclelinux:6.6
   # - docker pull centos:7
   # - docker pull fedora:23
-  # - docker pull alpine:3.2
+  - docker pull alpine:3.2
 
 script:
   # Build custom container from Alpine Linux 3.2
-  # - docker build -t alpine-build-box/alpine:3.2 -f alpine/Dockerfile .
+  - docker build -t alpine-build-box/alpine:3.2 -f alpine/Dockerfile .
   # - pwd
   # - ls -al
   # Run custom container for Gulp command
-  # - docker run --rm=true -v `pwd`/src:/src:rw alpine-build-box/alpine:3.2 /bin/bash build.sh
+  - docker run --rm=true -v `pwd`/src:/src:rw alpine-build-box/alpine:3.2 /bin/bash build.sh
 
   # Build custom container from Oracle 6
-  - docker build -t alpine-build-box/oraclelinux:6.6 -f oraclelinux/Dockerfile .
+  # - docker build -t alpine-build-box/oraclelinux:6.6 -f oraclelinux/Dockerfile .
   # Run custom container for Gulp command
-  - docker run --rm=true -v `pwd`/src:/src:rw alpine-build-box/oraclelinux:6.6 /bin/bash build.sh
+  # - docker run --rm=true -v `pwd`/src:/src:rw alpine-build-box/oraclelinux:6.6 /bin/bash build.sh
 
   # Build custom container from Fedora 23
   # - docker build -t alpine-build-box/fedora:23 -f fedora/Dockerfile .
